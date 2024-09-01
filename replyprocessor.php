@@ -31,7 +31,7 @@ chdir("replies");
 //open & write file
 $file = fopen($filename,"w");									//create the file
 fwrite($file,"<head><title>Reply</title><link rel=".$quote."stylesheet".$quote." type=".$quote."text/css".$quote."href=".$quote."/style.css".$quote."></head>");
-fwrite($file,"<body><h1><?php echo $callsign ?>  Emergency Email Server<br>Amateur Radio Emergency Services</h1><br><hr><br><br>"); 
+fwrite($file,"<body><h1><?php echo \"$callsign \"?>  Emergency Email Server<br>Amateur Radio Emergency Services</h1><br><hr><br><br>"); 
 fwrite($file,"<strong>Message Posted at UTC Date and time ".$date."</strong><br><br><br>");		//write the date
 fwrite($file,"\r\n");										//returns a blank line
 //fwrite($file,"<br><br><a href=".$quote."/search.php".$quote.">New Search</a><br>");		//button for new search
